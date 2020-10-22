@@ -9,33 +9,35 @@ export function Home() {
 	const [greenColor, setGreenColor] = useState("");
 
 	return (
-		<div className="rounded bg-dark box">
-			<div
-				className={"rounded-circle light " + redColor}
-				onClick={() => {
-					setRedColor("bg-danger");
-					setYellowColor("");
-					setGreenColor("");
-				}}>
-				<TrafficLigths />
-			</div>
-			<div
-				className={"rounded-circle light " + yellowColor}
-				onClick={() => {
-					setYellowColor("bg-warning");
-					setRedColor("");
-					setGreenColor("");
-				}}>
-				<TrafficLigths />
-			</div>
-			<div
-				className={"rounded-circle light " + greenColor}
-				onClick={() => {
-					setRedColor("");
-					setYellowColor("");
-					setGreenColor("bg-success");
-				}}>
-				<TrafficLigths />
+		<div className="d-flex justify-content-center my-5">
+			<div className="rounded bg-dark box">
+				<div
+					className={"rounded-circle light " + redColor}
+					onClick={() => {
+						setRedColor("bg-danger");
+						setYellowColor("");
+						setGreenColor("");
+					}}>
+					<TrafficLigths />
+				</div>
+				<div
+					className={"rounded-circle light " + yellowColor}
+					onClick={() => {
+						setYellowColor("bg-warning");
+						setRedColor("");
+						setGreenColor("");
+					}}>
+					<TrafficLigths />
+				</div>
+				<div
+					className={"rounded-circle light " + greenColor}
+					onClick={() => {
+						setRedColor("");
+						setYellowColor("");
+						setGreenColor("bg-success");
+					}}>
+					<TrafficLigths />
+				</div>
 			</div>
 		</div>
 	);
