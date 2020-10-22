@@ -1,13 +1,37 @@
 @import "~bootstrap/scss/bootstrap.scss";
-
-/* 
-
-    You can write your own styles here...
+.bg-danger{
+    -webkit-box-shadow: 0px 0px 46px 0px rgb(242, 14, 14);
+-moz-box-shadow: 0px 0px 46px 0px rgb(242, 14, 14);
+box-shadow: 0px 0px 46px 0px rgb(242, 14, 14);
+}
+.bg-warning{
+-webkit-box-shadow: 0px 0px 46px 0px rgba(242,200,14,1);
+-moz-box-shadow: 0px 0px 46px 0px rgba(242,200,14,1);
+box-shadow: 0px 0px 46px 0px rgba(242,200,14,1);
+}
+.bg-success{
+-webkit-box-shadow: 0px 0px 46px 0px rgb(52, 242, 14);
+-moz-box-shadow: 0px 0px 46px 0px rgb(22, 242, 14);
+box-shadow: 0px 0px 46px 0px rgb(52, 242, 14);
+}
+.light{
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 0.5rem;
+    background-color: white;
+}
+.box{
+    height: 8rem;
+    width: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
     
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+}
+.sitck{
+    height: 5rem;
+    width: 1rem;
+    margin-left: 1.5rem;
+}

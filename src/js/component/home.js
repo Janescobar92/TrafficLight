@@ -1,24 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 
 //include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
-
+import { TrafficLigths } from "./ligth.jsx";
 //create your first component
 export function Home() {
+	const [redColor, setRedColor] = useState("");
+	const [yellowColor, setYellowColor] = useState("");
+	const [greenColor, setGreenColor] = useState("");
+
 	return (
-		<div className="text-center mt-5">
-			<h1>Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+		<div className="rounded bg-dark box">
+			<div
+				className={"rounded-circle light " + redColor}
+				onClick={() => {
+					setRedColor("bg-danger");
+					setYellowColor("");
+					setGreenColor("");
+				}}>
+				<TrafficLigths />
+			</div>
+			<div
+				className={"rounded-circle light " + yellowColor}
+				onClick={() => {
+					setYellowColor("bg-warning");
+					setRedColor("");
+					setGreenColor("");
+				}}>
+				<TrafficLigths />
+			</div>
+			<div
+				className={"rounded-circle light " + greenColor}
+				onClick={() => {
+					setRedColor("");
+					setYellowColor("");
+					setGreenColor("bg-success");
+				}}>
+				<TrafficLigths />
+			</div>
 		</div>
 	);
 }
