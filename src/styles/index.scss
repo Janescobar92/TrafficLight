@@ -1,4 +1,11 @@
 @import "~bootstrap/scss/bootstrap.scss";
+body{
+    background-image: url("https://images.pexels.com/photos/2338113/pexels-photo-2338113.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
 .bg-danger{
     -webkit-box-shadow: 0px 0px 46px 0px rgb(242, 14, 14);
 -moz-box-shadow: 0px 0px 46px 0px rgb(242, 14, 14);
@@ -14,20 +21,30 @@ box-shadow: 0px 0px 46px 0px rgba(242,200,14,1);
 -moz-box-shadow: 0px 0px 46px 0px rgb(22, 242, 14);
 box-shadow: 0px 0px 46px 0px rgb(52, 242, 14);
 }
-.light{
-    width: 2rem;
-    height: 2rem;
-    margin-bottom: 0.5rem;
-    background-color: white;
+.lightA{
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: rgba(148, 99, 132, 0.089);
+}
+.lightB{
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color:  rgba(148, 99, 132, 0.089);
+}.lightC{
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color:  rgba(148, 99, 132, 0.089);
 }
 .box{
-    height: 8rem;
-    width: 4rem;
+    border-radius: 20px;
+    height: 20vh;
+    margin-top: 25.5%;
+    margin-left: 30%;
+    width: 10vw;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     padding-left: 1rem;
-    padding-top: 0.5rem;
+    padding-top: 0;
     
 }
 .sitck{

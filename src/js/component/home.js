@@ -10,9 +10,9 @@ export function Home() {
 
 	return (
 		<div className="d-flex justify-content-center my-5">
-			<div className="rounded bg-dark box">
+			<div className="box">
 				<div
-					className={"rounded-circle light " + redColor}
+					className={"rounded-circle lightA " + redColor}
 					onClick={() => {
 						setRedColor("bg-danger");
 						setYellowColor("");
@@ -21,7 +21,7 @@ export function Home() {
 					<TrafficLigths />
 				</div>
 				<div
-					className={"rounded-circle light " + yellowColor}
+					className={"rounded-circle lightB " + yellowColor}
 					onClick={() => {
 						setYellowColor("bg-warning");
 						setRedColor("");
@@ -30,7 +30,7 @@ export function Home() {
 					<TrafficLigths />
 				</div>
 				<div
-					className={"rounded-circle light " + greenColor}
+					className={"rounded-circle lightC " + greenColor}
 					onClick={() => {
 						setRedColor("");
 						setYellowColor("");
